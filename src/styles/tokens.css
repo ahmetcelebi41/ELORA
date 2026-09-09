@@ -1,4 +1,32 @@
 :root {
+  /* Layout values carried forward from the project baseline. */
   --page-max-width: 72rem;
   --page-gutter: 1rem;
+
+  /* Semantic color hooks. System colors avoid making a brand-palette decision. */
+  --color-background: Canvas;
+  --color-surface: Canvas;
+  --color-text: CanvasText;
+  --color-text-muted: GrayText;
+  --color-border: currentColor;
+  --color-accent: LinkText;
+  --color-accent-hover: LinkText;
+  --color-focus: Highlight;
+
+  /* Typography inherits the user's system font until a brand font is defined. */
+  --font-family-body: inherit;
+  --font-weight-regular: normal;
+  --font-weight-emphasis: bolder;
+  --line-height-body: normal;
+  --letter-spacing-eyebrow: normal;
+
+  /* Existing gutter is the only project-defined spacing value. */
+  --space-page-gutter: var(--page-gutter);
+
+  /* Shared component mechanics, not final visual scales. */
+  --control-min-size: 2.75rem;
+  --focus-ring-width: medium;
+  --focus-ring-offset: 0.1875rem;
+  --motion-duration: 200ms;
+  --motion-easing: ease;
 }
