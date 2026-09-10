@@ -1,0 +1,72 @@
+.toggle {
+  display: inline-flex;
+  width: var(--control-min-size);
+  min-height: var(--control-min-size);
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-md);
+  background: transparent;
+  color: var(--color-text);
+  cursor: pointer;
+  transition:
+    border-color var(--motion-duration) var(--motion-easing),
+    background-color var(--motion-duration) var(--motion-easing);
+}
+
+.toggle svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-width: 1.75;
+}
+
+.panel {
+  min-width: 0;
+  grid-column: 1 / -1;
+  padding-top: var(--space-2);
+}
+
+.navigationList {
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--color-border);
+  list-style: none;
+}
+
+.navigationLink {
+  display: flex;
+  min-height: var(--control-min-size);
+  align-items: center;
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-text);
+  font-size: var(--font-size-nav);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-control);
+  text-decoration: none;
+}
+
+.appointment {
+  width: 100%;
+  margin-top: var(--space-4);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .toggle:hover {
+    border-color: var(--color-text-muted);
+    background: var(--color-surface);
+  }
+
+  .navigationLink:hover {
+    color: var(--color-primary-hover);
+  }
+}
+
+@media (min-width: 64rem) {
+  .toggle,
+  .panel {
+    display: none;
+  }
+}

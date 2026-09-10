@@ -1,5 +1,16 @@
 import type { Metadata } from "next";
+import { DM_Sans } from "next/font/google";
+
+import { Header } from "@/components/layout/Header";
+
 import "./globals.css";
+
+const dmSans = DM_Sans({
+  display: "swap",
+  subsets: ["latin", "latin-ext"],
+  variable: "--font-dm-sans",
+  weight: ["400", "500", "600"],
+});
 
 export const metadata: Metadata = {
   title: "Elora",
@@ -12,8 +23,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="tr">
-      <body>{children}</body>
+    <html className={dmSans.variable} data-scroll-behavior="smooth" lang="tr">
+      <body>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }

@@ -1,32 +1,88 @@
 :root {
-  /* Layout values carried forward from the project baseline. */
-  --page-max-width: 72rem;
+  --page-max-width: 75rem;
   --page-gutter: 1rem;
 
-  /* Semantic color hooks. System colors avoid making a brand-palette decision. */
-  --color-background: Canvas;
-  --color-surface: Canvas;
-  --color-text: CanvasText;
-  --color-text-muted: GrayText;
-  --color-border: currentColor;
-  --color-accent: LinkText;
-  --color-accent-hover: LinkText;
-  --color-focus: Highlight;
+  --color-bg: #f8f5f1;
+  --color-background: var(--color-bg);
+  --color-surface: #f1ece6;
+  --color-surface-strong: #e9e1d9;
+  --color-primary: #9a6759;
+  --color-primary-hover: #825448;
+  --color-primary-active: #74493f;
+  --color-on-primary: #fffdfc;
+  --color-text: #292522;
+  --color-text-secondary: #625b56;
+  --color-text-muted: #756d67;
+  --color-border: #d8d0c8;
+  --color-border-strong: #beb3aa;
+  --color-focus: #825448;
+  --color-error: #a24e48;
+  --color-success: #52705a;
 
-  /* Typography inherits the user's system font until a brand font is defined. */
-  --font-family-body: inherit;
-  --font-weight-regular: normal;
-  --font-weight-emphasis: bolder;
-  --line-height-body: normal;
-  --letter-spacing-eyebrow: normal;
+  --font-family-body: var(--font-dm-sans), sans-serif;
+  --font-size-h4: 1.25rem;
+  --font-size-nav: 0.9375rem;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-emphasis: var(--font-weight-medium);
+  --line-height-body: 1.65;
+  --line-height-control: 1.2;
+  --letter-spacing-eyebrow: 0.12em;
 
-  /* Existing gutter is the only project-defined spacing value. */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+  --space-9: 5rem;
+  --space-10: 6rem;
+  --space-11: 7.5rem;
+  --space-12: 9rem;
   --space-page-gutter: var(--page-gutter);
 
-  /* Shared component mechanics, not final visual scales. */
-  --control-min-size: 2.75rem;
-  --focus-ring-width: medium;
+  --radius-sm: 0.375rem;
+  --radius-md: 0.625rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-pill: 999px;
+
+  --shadow-subtle: 0 4px 16px rgb(41 37 34 / 5%);
+  --shadow-floating: 0 10px 30px rgb(41 37 34 / 8%);
+
+  --control-min-size: 3rem;
+  --focus-ring-width: 0.125rem;
   --focus-ring-offset: 0.1875rem;
-  --motion-duration: 200ms;
+  --motion-duration-fast: 180ms;
+  --motion-duration: 220ms;
+  --motion-duration-slow: 250ms;
   --motion-easing: ease;
+}
+
+@media (min-width: 30rem) {
+  :root {
+    --page-gutter: 1.25rem;
+  }
+}
+
+@media (min-width: 48rem) {
+  :root {
+    --page-gutter: 1.5rem;
+  }
+}
+
+@media (min-width: 64rem) {
+  :root {
+    --page-gutter: 2rem;
+    --font-size-h4: 1.375rem;
+  }
+}
+
+@media (min-width: 80rem) {
+  :root {
+    --page-gutter: 2.5rem;
+  }
 }
