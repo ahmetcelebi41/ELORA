@@ -366,7 +366,7 @@ Hizmetleri tekrar anlatmak yerine Elora'nın yaklaşımını, marka karakterini 
 
 İki kolon:
 
-- **Sol:** büyük marka / mekan görseli
+- **Sol:** büyük işletme sahibi portresi
 - **Sağ:** metin ve CTA
 
 Yaklaşık oran:
@@ -396,13 +396,16 @@ Yaklaşık oran:
 
 Hero görseli tekrar edilmemeli.
 
-Tercih edilen:
+Bu bölümde Elora’nın marka sahibi temsili olarak işletme sahibi portresi kullanılmalıdır.
 
-- merkez iç mekanı,
-- reception / bekleme alanı,
-- mimari detay,
-- doğal ışık,
-- sakin ve kaliteli dekorasyon.
+Portre:
+
+- doğal ve erişilebilir bir ifade,
+- sıcak nötr tonlar,
+- sakin ve profesyonel bir duruş,
+- yüzü ve duruşu koruyan kontrollü kadraj
+
+taşımalıdır.
 
 ## Mobil
 
@@ -758,7 +761,7 @@ Gerçek işletme verisi oluştuğunda bu alan yeniden değerlendirilebilir.
 ↓  
 **Hizmetler — büyük görsel kartlar**  
 ↓  
-**Hakkımızda — marka / mekan hikayesi**  
+**Hakkımızda — marka sahibi / kişisel marka hikayesi**
 ↓  
 **Galeri — editorial görsel yoğunluk**  
 ↓  
@@ -794,7 +797,7 @@ Bakım deneyimi / insan dokunuşu.
 
 ### Hakkımızda
 
-Mekan / marka atmosferi.
+İşletme sahibi portresi / marka sahibi temsili.
 
 ### Hizmet Kartları
 
