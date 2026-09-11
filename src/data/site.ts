@@ -16,4 +16,9 @@ export const site = {
     href: "/randevu",
     label: "Randevu Al",
   },
+  businessInfo: {
+    address: "Demo adres",
+    phone: "Demo telefon",
+    openingHours: "Demo çalışma saatleri",
+  },
 } as const;
