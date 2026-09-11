@@ -1,0 +1,170 @@
+.footer {
+  --color-text: var(--color-footer-text);
+  --color-text-muted: var(--color-footer-text-muted);
+  --color-border-strong: var(--color-footer-divider);
+  --color-surface: var(--color-footer-surface);
+  --color-focus: var(--color-footer-text);
+
+  background: var(--color-footer-bg);
+  color: var(--color-footer-text);
+}
+
+.grid {
+  display: grid;
+  grid-template-areas:
+    "brand"
+    "menu"
+    "services"
+    "contact"
+    "appointment"
+    "social";
+  gap: var(--space-6);
+  padding-block: var(--space-8);
+}
+
+.brand {
+  grid-area: brand;
+}
+
+.logo {
+  width: fit-content;
+  margin-bottom: var(--space-4);
+  filter: brightness(0) invert(1);
+}
+
+.brandStatement {
+  max-width: 27rem;
+  margin: 0;
+  color: var(--color-footer-text-muted);
+  font-size: var(--font-size-nav);
+}
+
+.menu {
+  grid-area: menu;
+}
+
+.services {
+  grid-area: services;
+}
+
+.contact {
+  grid-area: contact;
+}
+
+.appointment {
+  grid-area: appointment;
+}
+
+.social {
+  display: flex;
+  grid-area: social;
+  flex-wrap: wrap;
+  gap: var(--space-5);
+  align-items: center;
+  font-size: var(--font-size-nav);
+}
+
+.groupTitle {
+  margin: 0 0 var(--space-3);
+  color: var(--color-footer-text);
+  font-size: var(--font-size-nav);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--letter-spacing-eyebrow);
+  line-height: var(--line-height-control);
+  text-transform: uppercase;
+}
+
+.linkList {
+  display: grid;
+  gap: var(--space-1);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.link {
+  display: inline-flex;
+  min-height: 2.5rem;
+  align-items: center;
+  color: var(--color-footer-text-muted);
+  font-size: var(--font-size-nav);
+  line-height: 1.4;
+  text-decoration-color: transparent;
+  text-underline-offset: 0.25em;
+  transition:
+    color var(--motion-duration) var(--motion-easing),
+    text-decoration-color var(--motion-duration) var(--motion-easing);
+}
+
+.contactDetails {
+  display: grid;
+  gap: var(--space-2);
+  color: var(--color-footer-text-muted);
+  font-size: var(--font-size-nav);
+  font-style: normal;
+}
+
+.quietText {
+  color: var(--color-footer-text-muted);
+}
+
+.bottomBar {
+  display: grid;
+  gap: var(--space-3);
+  border-top: 1px solid var(--color-footer-divider);
+  padding-block: var(--space-5);
+  color: var(--color-footer-text-muted);
+  font-size: 0.8125rem;
+}
+
+.bottomBar p {
+  margin: 0;
+}
+
+.legalText {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2) var(--space-5);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .link:hover {
+    color: var(--color-footer-text);
+    text-decoration-color: currentColor;
+  }
+}
+
+@media (min-width: 48rem) {
+  .grid {
+    grid-template-areas:
+      "brand menu"
+      "services contact"
+      "social appointment";
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-7) var(--space-6);
+  }
+
+  .appointment {
+    align-self: center;
+  }
+
+  .bottomBar {
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+  }
+}
+
+@media (min-width: 64rem) {
+  .grid {
+    grid-template-areas:
+      "brand menu services contact"
+      "social menu services appointment";
+    grid-template-columns: 1.35fr 0.85fr 1.25fr 1fr;
+    gap: var(--space-5) var(--space-7);
+    padding-block: var(--space-9);
+  }
+
+  .appointment {
+    align-self: start;
+  }
+}

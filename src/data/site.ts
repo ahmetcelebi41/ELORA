@@ -21,4 +21,8 @@ export const site = {
     phone: "Demo telefon",
     openingHours: "Demo çalışma saatleri",
   },
+  social: {
+    instagram: null,
+    facebook: null,
+  },
 } as const;

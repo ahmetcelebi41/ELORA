@@ -18,6 +18,11 @@
   --color-focus: #884f45;
   --color-error: #a24e48;
   --color-success: #52705a;
+  --color-footer-bg: #332d29;
+  --color-footer-surface: #403833;
+  --color-footer-text: #f8f5f1;
+  --color-footer-text-muted: #cfc5bd;
+  --color-footer-divider: #5f554e;
 
   --font-family-body: var(--font-dm-sans), sans-serif;
   --font-size-h4: 1.25rem;
