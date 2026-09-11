@@ -8,6 +8,7 @@ type SectionHeadingProps = {
   description?: ReactNode;
   eyebrow?: ReactNode;
   title: ReactNode;
+  titleId?: string;
 };
 
 export function SectionHeading({
@@ -16,6 +17,7 @@ export function SectionHeading({
   description,
   eyebrow,
   title,
+  titleId,
 }: SectionHeadingProps) {
   const classes = [
     styles.heading,
@@ -28,7 +30,9 @@ export function SectionHeading({
   return (
     <header className={classes}>
       {eyebrow ? <p className={styles.eyebrow}>{eyebrow}</p> : null}
-      <h2 className={styles.title}>{title}</h2>
+      <h2 className={styles.title} id={titleId}>
+        {title}
+      </h2>
       {description ? (
         <p className={styles.description}>{description}</p>
       ) : null}

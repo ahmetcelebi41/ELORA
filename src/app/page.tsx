@@ -1,3 +1,4 @@
+import { FeaturedServices } from "@/components/home/FeaturedServices";
 import { HomeHero } from "@/components/home/HomeHero";
 import { HomeTrustStrip } from "@/components/home/HomeTrustStrip";
 
@@ -8,6 +9,7 @@ export default function HomePage() {
     <main className={styles.main}>
       <HomeHero />
       <HomeTrustStrip />
+      <FeaturedServices />
     </main>
   );
 }
