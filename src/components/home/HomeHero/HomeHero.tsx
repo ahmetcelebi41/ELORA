@@ -32,13 +32,13 @@ export function HomeHero() {
 
           <div className={styles.media}>
             <Image
-              alt="Güzellik merkezinde cilt bakımı uygulayan uzman"
+              alt="Aydınlık güzellik merkezinde bakım öncesi dinlenen kadın"
               className={styles.image}
-              height={1086}
+              height={1024}
               preload
               sizes="(min-width: 1280px) 672px, (min-width: 1024px) 55vw, calc(100vw - 2rem)"
-              src="/images/home/home-hero-treatment.png"
-              width={1448}
+              src="/images/home/home-hero-lifestyle.png"
+              width={1536}
             />
           </div>
         </div>

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 import { site } from "@/data/site";
@@ -11,7 +12,13 @@ export function Logo() {
       className={styles.logo}
       href="/"
     >
-      {site.name.toLocaleUpperCase("tr-TR")}
+      <Image
+        alt=""
+        className={styles.logoImage}
+        height={50}
+        src="/logo/elora-wordmark-selected.png"
+        width={150}
+      />
     </Link>
   );
 }

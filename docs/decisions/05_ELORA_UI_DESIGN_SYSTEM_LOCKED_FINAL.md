@@ -72,7 +72,7 @@ Ana tasarım prensibi:
 
 ## 3.1 Ana renk yönü
 
-**Warm Taupe + Muted Rose Brown**
+**Warm Taupe + Warm Terracotta**
 
 Elora arayüzünde nötr yüzeyler baskın; marka rengi kontrollü vurgu olarak kullanılacaktır.
 
@@ -83,16 +83,16 @@ Elora arayüzünde nötr yüzeyler baskın; marka rengi kontrollü vurgu olarak 
 | `--color-bg` | `#F8F5F1` | Ana sayfa zemini |
 | `--color-surface` | `#F1ECE6` | Alternatif section / yüzey |
 | `--color-surface-strong` | `#E9E1D9` | Daha belirgin sıcak nötr yüzey |
-| `--color-primary` | `#9A6759` | Ana CTA / marka vurgusu |
-| `--color-primary-hover` | `#825448` | Primary hover |
-| `--color-primary-active` | `#74493F` | Primary active / pressed |
+| `--color-primary` | `#9B5E52` | Ana CTA / marka vurgusu |
+| `--color-primary-hover` | `#884F45` | Primary hover |
+| `--color-primary-active` | `#754239` | Primary active / pressed |
 | `--color-on-primary` | `#FFFDFC` | Primary üzerindeki metin |
 | `--color-text` | `#292522` | Ana başlık ve gövde metni |
 | `--color-text-secondary` | `#625B56` | Açıklamalar |
 | `--color-text-muted` | `#756D67` | Yardımcı metin / caption / helper |
 | `--color-border` | `#D8D0C8` | Genel border / divider |
 | `--color-border-strong` | `#BEB3AA` | Güçlü sınır / selected state |
-| `--color-focus` | `#825448` | Focus indicator |
+| `--color-focus` | `#884F45` | Focus indicator |
 | `--color-error` | `#A24E48` | Validation error |
 | `--color-success` | `#52705A` | Success göstergesi |
 
@@ -140,9 +140,17 @@ Section ayrımında öncelik:
 
 ## 4.1 Font ailesi
 
-**DM Sans**
+**Ana UI fontu: DM Sans**
 
-İkinci font ailesi kullanılmayacaktır.
+Body, navigation, button ve diğer UI rolleri DM Sans olarak kalacaktır.
+
+Yalnız editorial / Ana Sayfa Hero `Display` rolünde güvenli sistem serif stack kullanılabilir:
+
+```css
+Georgia, "Times New Roman", serif
+```
+
+Bu istisna yeni web-font dependency veya remote font çağrısı oluşturmayacaktır.
 
 Premium karakter farklı fontları birleştirerek değil;
 
@@ -174,7 +182,7 @@ Ağır bold tipografi Elora'nın sakin editorial karakterini bozacak şekilde ku
 
 | Rol | Desktop | Mobil | Weight | Line-height |
 |---|---:|---:|---:|---:|
-| Display / Hero H1 | 64px | 42px | 600 | 1.08 |
+| Display / Hero H1 | 64px | 42px | 500 | 1.08 |
 | H1 / Page Title | 52px | 38px | 600 | 1.10 |
 | H2 | 40px | 32px | 600 | 1.15 |
 | H3 | 28px | 24px | 600 | 1.25 |
@@ -1287,9 +1295,9 @@ Tailwind veya UI component library bu sistemin varsayılan parçası değildir.
 
 ## ONAYLANAN
 
-- Warm Taupe + Muted Rose Brown renk yönü.
+- Warm Taupe + Warm Terracotta renk yönü.
 - Semantic color token seti.
-- DM Sans tek font ailesi.
+- UI/body/navigation/button için DM Sans; editorial/Hero Display için kontrollü sistem serif istisnası.
 - 400 / 500 / 600 font ağırlıkları.
 - Responsive typography scale.
 - 4–144px spacing scale.

@@ -6,16 +6,16 @@
   --color-background: var(--color-bg);
   --color-surface: #f1ece6;
   --color-surface-strong: #e9e1d9;
-  --color-primary: #9a6759;
-  --color-primary-hover: #825448;
-  --color-primary-active: #74493f;
+  --color-primary: #9b5e52;
+  --color-primary-hover: #884f45;
+  --color-primary-active: #754239;
   --color-on-primary: #fffdfc;
   --color-text: #292522;
   --color-text-secondary: #625b56;
   --color-text-muted: #756d67;
   --color-border: #d8d0c8;
   --color-border-strong: #beb3aa;
-  --color-focus: #825448;
+  --color-focus: #884f45;
   --color-error: #a24e48;
   --color-success: #52705a;
 
