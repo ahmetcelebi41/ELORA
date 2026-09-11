@@ -1,5 +1,6 @@
 import { FeaturedServices } from "@/components/home/FeaturedServices";
 import { HomeAbout } from "@/components/home/HomeAbout";
+import { HomeAppointmentCta } from "@/components/home/HomeAppointmentCta";
 import { HomeGallery } from "@/components/home/HomeGallery";
 import { HomeHero } from "@/components/home/HomeHero";
 import { HomeTrustStrip } from "@/components/home/HomeTrustStrip";
@@ -14,6 +15,7 @@ export default function HomePage() {
       <FeaturedServices />
       <HomeAbout />
       <HomeGallery />
+      <HomeAppointmentCta />
     </main>
   );
 }
