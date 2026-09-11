@@ -1,0 +1,113 @@
+.section {
+  background: var(--color-bg);
+  padding-block: var(--space-8);
+}
+
+.heading {
+  max-width: 43rem;
+}
+
+.gallery {
+  display: grid;
+  gap: var(--space-4);
+  margin-top: var(--space-7);
+}
+
+.media {
+  position: relative;
+  min-width: 0;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+}
+
+.space {
+  aspect-ratio: 3 / 2;
+}
+
+.image {
+  object-fit: cover;
+  transition: transform var(--motion-duration) var(--motion-easing);
+}
+
+.space .image {
+  object-position: center;
+}
+
+.treatmentRoom .image {
+  object-position: center 58%;
+}
+
+.detail .image {
+  object-position: center 55%;
+}
+
+.humanTouch .image {
+  object-position: center 42%;
+}
+
+.action {
+  margin-top: var(--space-7);
+}
+
+@media (min-width: 48rem) {
+  .gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-5);
+  }
+
+  .space,
+  .treatmentRoom {
+    grid-column: 1 / -1;
+  }
+
+  .treatmentRoom {
+    aspect-ratio: 16 / 9;
+  }
+}
+
+@media (min-width: 64rem) {
+  .section {
+    padding-block: var(--space-10);
+  }
+
+  .gallery {
+    grid-template-areas:
+      "space treatment treatment"
+      "space detail human";
+    grid-template-columns: minmax(0, 1.22fr) repeat(2, minmax(0, 0.5fr));
+    grid-template-rows: minmax(0, 1.15fr) minmax(0, 0.85fr);
+    aspect-ratio: 2.25 / 1;
+    gap: var(--space-5);
+    margin-top: var(--space-8);
+  }
+
+  .media,
+  .space,
+  .treatmentRoom {
+    aspect-ratio: auto;
+  }
+
+  .space {
+    grid-area: space;
+  }
+
+  .treatmentRoom {
+    grid-area: treatment;
+  }
+
+  .detail {
+    grid-area: detail;
+  }
+
+  .humanTouch {
+    grid-area: human;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .media:hover .image {
+    transform: scale(1.015);
+  }
+}

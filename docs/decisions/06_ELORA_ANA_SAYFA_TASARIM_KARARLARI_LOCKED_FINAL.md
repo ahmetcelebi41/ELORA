@@ -461,6 +461,12 @@ Toplam **4 görsel**:
 - 1 büyük ana görsel
 - 3 destekleyici görsel
 
+Yerleşim:
+
+- solda iki görsel satırı yüksekliğini kapsayan büyük ana Mekân görseli,
+- sağ üstte Bakım Alanı görseli,
+- sağ altta yan yana Detay ve İnsan Dokunuşu görselleri.
+
 Eşit karelerden oluşan standart Instagram grid kullanılmayacak.
 
 ## Görsel Dağılımı
