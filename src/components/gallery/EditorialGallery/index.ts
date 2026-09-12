@@ -1,0 +1,1 @@
+export { EditorialGallery } from "./EditorialGallery";

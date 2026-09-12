@@ -1,0 +1,1 @@
+export { GalleryIntro } from "./GalleryIntro";

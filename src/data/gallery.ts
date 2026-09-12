@@ -31,3 +31,179 @@ export const homeGalleryImages: HomeGalleryImage[] = [
     role: "humanTouch",
   },
 ];
+
+export type EditorialGalleryImage = {
+  id: string;
+  src: string;
+  alt: string;
+  role:
+    | "space"
+    | "human"
+    | "room"
+    | "treatment"
+    | "architecture"
+    | "preparation"
+    | "atmosphere";
+  width: number;
+  height: number;
+};
+
+export const editorialGalleryImages: EditorialGalleryImage[] = [
+  {
+    id: "gallery-editorial-space",
+    src: "/images/gallery/editorial/gallery-editorial-space.png",
+    alt: "Elora’nın doğal ışık alan geniş resepsiyon ve bekleme alanı",
+    role: "space",
+    width: 1536,
+    height: 1024,
+  },
+  {
+    id: "gallery-editorial-human",
+    src: "/images/gallery/editorial/gallery-editorial-human.png",
+    alt: "Elora uzmanının danışanıyla sakin bir görüşme yaptığı doğal an",
+    role: "human",
+    width: 1122,
+    height: 1402,
+  },
+  {
+    id: "gallery-editorial-room",
+    src: "/images/gallery/editorial/gallery-editorial-room.png",
+    alt: "Elora’da bakıma hazırlanmış aydınlık ve düzenli uygulama odası",
+    role: "room",
+    width: 1122,
+    height: 1402,
+  },
+  {
+    id: "gallery-editorial-treatment",
+    src: "/images/gallery/editorial/gallery-editorial-treatment.png",
+    alt: "Elora uzmanının danışanına özenle yüz bakımı uyguladığı an",
+    role: "treatment",
+    width: 1122,
+    height: 1402,
+  },
+  {
+    id: "gallery-editorial-architecture",
+    src: "/images/gallery/editorial/gallery-editorial-architecture.png",
+    alt: "Elora’nın kemerli geçişi, ahşap yüzeyleri ve doğal ışığı",
+    role: "architecture",
+    width: 1122,
+    height: 1402,
+  },
+  {
+    id: "gallery-editorial-preparation",
+    src: "/images/gallery/editorial/gallery-editorial-preparation.png",
+    alt: "Elora’da bakım öncesi hazırlanmış ürünler ve temiz tekstiller",
+    role: "preparation",
+    width: 1122,
+    height: 1402,
+  },
+  {
+    id: "gallery-editorial-atmosphere",
+    src: "/images/gallery/editorial/gallery-editorial-atmosphere.png",
+    alt: "Elora’nın gün ışığıyla aydınlanan sakin bekleme köşesi",
+    role: "atmosphere",
+    width: 1122,
+    height: 1402,
+  },
+];
+
+export type CareMomentImage = {
+  id: string;
+  src: string;
+  alt: string;
+  role: "skinCare" | "laser" | "g8" | "ems";
+  serviceName: string;
+  width: number;
+  height: number;
+};
+
+export const careMomentImages: CareMomentImage[] = [
+  {
+    id: "gallery-service-cilt-bakimi",
+    src: "/images/gallery/care-moments/gallery-service-cilt-bakimi.png",
+    alt: "Elora uzmanının danışanına sakin bir cilt bakımı uygulaması",
+    role: "skinCare",
+    serviceName: "Cilt Bakımı",
+    width: 1122,
+    height: 1402,
+  },
+  {
+    id: "gallery-service-lazer-epilasyon",
+    src: "/images/gallery/care-moments/gallery-service-lazer-epilasyon.png",
+    alt: "Elora’da mahremiyeti koruyan profesyonel lazer epilasyon uygulaması",
+    role: "laser",
+    serviceName: "Lazer Epilasyon",
+    width: 1122,
+    height: 1402,
+  },
+  {
+    id: "gallery-service-g8",
+    src: "/images/gallery/care-moments/gallery-service-g8.png",
+    alt: "Elora’da uzman eşliğinde gerçekleştirilen G8 bölgesel bakım uygulaması",
+    role: "g8",
+    serviceName: "G8 ile Bölgesel İncelme",
+    width: 1122,
+    height: 1402,
+  },
+  {
+    id: "gallery-service-ems",
+    src: "/images/gallery/care-moments/gallery-service-ems.png",
+    alt: "Elora’da modern ekipmanla gerçekleştirilen EMS bölgesel bakım uygulaması",
+    role: "ems",
+    serviceName: "EMS ile Bölgesel Zayıflama",
+    width: 1122,
+    height: 1402,
+  },
+];
+
+export type SpaceDetailImage = {
+  id: string;
+  src: string;
+  alt: string;
+  role: "room" | "daylight" | "texture" | "reception" | "quiet";
+  width: number;
+  height: number;
+};
+
+export const spaceDetailImages: SpaceDetailImage[] = [
+  {
+    id: "gallery-detail-room",
+    src: "/images/gallery/details/gallery-detail-room.png",
+    alt: "Elora’nın doğal dokularla hazırlanmış sakin bakım odası detayı",
+    role: "room",
+    width: 1122,
+    height: 1402,
+  },
+  {
+    id: "gallery-detail-daylight",
+    src: "/images/gallery/details/gallery-detail-daylight.png",
+    alt: "Elora bakım alanına geniş pencereden süzülen doğal ışık",
+    role: "daylight",
+    width: 1122,
+    height: 1402,
+  },
+  {
+    id: "gallery-detail-texture",
+    src: "/images/gallery/details/gallery-detail-texture.png",
+    alt: "Elora’da sıcak taş, tekstil ve bakım ürünlerinden oluşan doku detayı",
+    role: "texture",
+    width: 1122,
+    height: 1402,
+  },
+  {
+    id: "gallery-detail-reception",
+    src: "/images/gallery/details/gallery-detail-reception.png",
+    alt: "Elora resepsiyonunun aydınlatma ve doğal malzeme detayları",
+    role: "reception",
+    width: 1122,
+    height: 1402,
+  },
+  {
+    id: "gallery-detail-quiet",
+    src: "/images/gallery/details/gallery-detail-quiet.png",
+    alt: "Elora’nın gün ışığı alan sessiz ve konforlu dinlenme köşesi",
+    role: "quiet",
+    width: 1122,
+    height: 1402,
+  },
+];

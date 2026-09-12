@@ -1,0 +1,122 @@
+.section {
+  background: var(--color-bg);
+  padding-block: var(--space-6) var(--space-9);
+}
+
+.container {
+  width: min(100% - (2 * var(--space-page-gutter)), 85rem);
+}
+
+.gallery {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.media {
+  position: relative;
+  min-width: 0;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+}
+
+.space,
+.architecture {
+  aspect-ratio: 3 / 2;
+}
+
+.room,
+.preparation {
+  aspect-ratio: 4 / 3;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--motion-duration) var(--motion-easing);
+}
+
+.space .image,
+.architecture .image,
+.atmosphere .image {
+  object-position: center;
+}
+
+.human .image,
+.treatment .image {
+  object-position: center 42%;
+}
+
+.room .image,
+.preparation .image {
+  object-position: center 56%;
+}
+
+@media (min-width: 48rem) {
+  .gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .space,
+  .architecture {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (min-width: 48rem) {
+  .gallery {
+    gap: var(--space-5);
+  }
+}
+
+@media (min-width: 64rem) {
+  .section {
+    padding-block: var(--space-7) var(--space-11);
+  }
+
+  .gallery {
+    grid-template-areas:
+      "space space space space space space space human human human human human"
+      "room room room treatment treatment treatment treatment human human human human human"
+      "architecture architecture architecture architecture architecture architecture architecture architecture architecture architecture architecture architecture"
+      "preparation preparation preparation preparation preparation atmosphere atmosphere atmosphere atmosphere atmosphere atmosphere atmosphere";
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    grid-template-rows: 25rem 18rem 30rem 27rem;
+  }
+
+  .media,
+  .space,
+  .room,
+  .architecture,
+  .preparation {
+    aspect-ratio: auto;
+  }
+
+  .space { grid-area: space; }
+  .human { grid-area: human; }
+  .room { grid-area: room; }
+  .treatment { grid-area: treatment; }
+  .architecture { grid-area: architecture; }
+  .preparation { grid-area: preparation; }
+  .atmosphere { grid-area: atmosphere; }
+}
+
+@media (min-width: 80rem) {
+  .gallery {
+    grid-template-rows: 28rem 20rem 34rem 30rem;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .media:hover .image {
+    transform: scale(1.015);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .image {
+    transition: none;
+  }
+}

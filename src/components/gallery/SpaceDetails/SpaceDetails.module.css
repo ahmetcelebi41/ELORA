@@ -1,0 +1,82 @@
+.section {
+  background: var(--color-bg);
+  padding-block: var(--space-9);
+}
+
+.layout {
+  display: grid;
+  gap: var(--space-7);
+}
+
+.heading {
+  max-width: 38rem;
+}
+
+.gallery {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.media {
+  position: relative;
+  min-width: 0;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (min-width: 30rem) {
+  .gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .room {
+    grid-column: 1 / -1;
+    aspect-ratio: 4 / 3;
+  }
+}
+
+@media (min-width: 48rem) {
+  .gallery {
+    gap: var(--space-5);
+  }
+}
+
+@media (min-width: 64rem) {
+  .section {
+    padding-block: var(--space-11);
+  }
+
+  .layout {
+    grid-template-columns: minmax(0, 35fr) minmax(0, 65fr);
+    gap: var(--space-8);
+    align-items: start;
+  }
+
+  .gallery {
+    grid-template-areas:
+      "room room room daylight daylight texture texture"
+      "room room room reception reception quiet quiet";
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    aspect-ratio: 7 / 5;
+  }
+
+  .media,
+  .room {
+    aspect-ratio: auto;
+  }
+
+  .room { grid-area: room; }
+  .daylight { grid-area: daylight; }
+  .texture { grid-area: texture; }
+  .reception { grid-area: reception; }
+  .quiet { grid-area: quiet; }
+}
