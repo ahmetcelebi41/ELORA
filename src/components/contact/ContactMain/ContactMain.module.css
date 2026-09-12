@@ -1,0 +1,21 @@
+.section {
+  background: var(--color-bg);
+  padding-block: var(--space-8);
+}
+
+.layout {
+  display: grid;
+  gap: var(--space-8);
+}
+
+@media (min-width: 64rem) {
+  .section {
+    padding-block: var(--space-10);
+  }
+
+  .layout {
+    grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+    gap: var(--space-8);
+    align-items: start;
+  }
+}

@@ -19,7 +19,16 @@ export const site = {
   businessInfo: {
     address: "Demo adres",
     phone: "Demo telefon",
+    email: "Demo e-posta",
     openingHours: "Demo çalışma saatleri",
+    phoneHref: null as string | null,
+    emailHref: null as string | null,
+    directionsHref: null as string | null,
+    visitHours: [
+      { label: "Pazartesi – Cuma", value: "Demo çalışma saatleri" },
+      { label: "Cumartesi", value: "Demo çalışma saatleri" },
+      { label: "Pazar", value: "Demo çalışma saatleri" },
+    ],
   },
   social: {
     instagram: null,
