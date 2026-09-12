@@ -5,6 +5,7 @@ export type Service = {
   name: string;
   slug: string;
   shortDescription: string;
+  appointmentDescription: string;
   listingTitle: string;
   listingDescription: string;
   cardImage: { src: string; alt: string };
@@ -74,6 +75,7 @@ export const services = [
     slug: "cilt-bakimi",
     shortDescription:
       "Cildinizin ihtiyaçlarına göre şekillenen, yenileyici ve özenli bakım uygulamaları.",
+    appointmentDescription: "Cildinizin ihtiyaçlarına göre şekillenen özenli bakım.",
     listingTitle: "Cildinizin ihtiyaçlarına göre şekillenen bakım.",
     listingDescription:
       "Cildinizin ihtiyaçlarını dikkate alan bakım yaklaşımıyla, daha dengeli ve özenli bir bakım deneyimi sunuyoruz. Uygulama süreci kişisel ihtiyaçlara göre değerlendirilir ve buna uygun şekilde planlanır.",
@@ -153,6 +155,7 @@ export const services = [
     name: "Lazer Epilasyon",
     slug: "lazer-epilasyon",
     shortDescription: "Konfor ve düzenli bakım odağıyla planlanan profesyonel lazer epilasyon uygulamaları.",
+    appointmentDescription: "Konfor ve düzenli takip odaklı bakım süreci.",
     listingTitle: "Konforlu ve düzenli bir bakım süreci.",
     listingDescription: "Lazer epilasyon uygulamalarını konfor, düzenli takip ve özenli süreç yönetimi odağında ele alıyoruz. Uygulama yaklaşımı ihtiyaçlara göre değerlendirilir ve süreç hakkında gerekli bilgiler açık biçimde paylaşılır.",
     cardImage: {
@@ -211,6 +214,7 @@ export const services = [
     name: "G8 ile Bölgesel İncelme",
     slug: "g8-ile-bolgesel-incelme",
     shortDescription: "Bölgesel bakım hedeflerini destekleyen, kişiye göre planlanan G8 uygulamaları.",
+    appointmentDescription: "Bölgesel bakım hedeflerini destekleyen uygulama.",
     listingTitle: "Bölgesel bakım hedeflerini destekleyen yaklaşım.",
     listingDescription: "G8 uygulamalarını bölgesel bakım hedeflerini destekleyen, kişiye göre planlanan bir bakım yaklaşımı olarak ele alıyoruz. Uygulama süreci ihtiyaçlara göre değerlendirilir ve kontrollü bir bakım deneyimi sunacak şekilde planlanır.",
     cardImage: {
@@ -269,6 +273,7 @@ export const services = [
     name: "EMS ile Bölgesel Zayıflama",
     slug: "ems-ile-bolgesel-zayiflama",
     shortDescription: "Kas aktivasyonunu destekleyen teknolojiyle bölgesel bakım deneyimi.",
+    appointmentDescription: "Kas aktivasyonunu destekleyen teknoloji odaklı bakım.",
     listingTitle: "Kas aktivasyonunu destekleyen teknolojiyle bölgesel bakım.",
     listingDescription: "EMS uygulamalarını kas aktivasyonunu destekleyen ve bölgesel bakım hedeflerine eşlik eden teknoloji destekli bir uygulama olarak ele alıyoruz. Süreç, kişisel ihtiyaçlar doğrultusunda değerlendirilir ve kontrollü bir bakım deneyimi sunacak şekilde planlanır.",
     cardImage: {

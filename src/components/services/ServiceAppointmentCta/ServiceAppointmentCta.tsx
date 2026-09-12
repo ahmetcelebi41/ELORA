@@ -10,7 +10,7 @@ export function ServiceAppointmentCta({ service }: { service: Service }) {
     <section className={styles.appointment} aria-labelledby="appointment-title">
       <Container className={styles.appointmentContent}>
         <SectionHeading alignment="center" className={styles.appointmentHeading} description={service.detail.finalCta.description} title={service.detail.finalCta.title} titleId="appointment-title" />
-        <Button className={styles.appointmentAction} href={`/randevu?service=${service.slug}`}>Randevu Al</Button>
+        <Button className={styles.appointmentAction} href={`/randevu?hizmet=${service.slug}`}>Randevu Al</Button>
       </Container>
     </section>
   );

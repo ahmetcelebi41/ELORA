@@ -16,7 +16,7 @@ export function ServiceHero({ service }: ServiceHeroProps) {
           <p className={styles.eyebrow}>ELORA HİZMETLERİ</p>
           <h1 className={styles.heroTitle} id="service-title">{service.name}</h1>
           <p className={styles.heroLead}>{service.detail.heroLead}</p>
-          <Button className={styles.heroAction} href={`/randevu?service=${service.slug}`}>
+          <Button className={styles.heroAction} href={`/randevu?hizmet=${service.slug}`}>
             Randevu Al
           </Button>
         </div>

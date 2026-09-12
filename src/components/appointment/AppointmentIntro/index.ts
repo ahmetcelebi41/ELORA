@@ -1,0 +1,1 @@
+export { AppointmentIntro } from "./AppointmentIntro";
