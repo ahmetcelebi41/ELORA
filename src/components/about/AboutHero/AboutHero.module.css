@@ -1,0 +1,64 @@
+.section {
+  padding-block: var(--space-8);
+}
+
+.copy {
+  max-width: 60rem;
+}
+
+.eyebrow {
+  margin: 0 0 var(--space-4);
+  color: var(--color-text-muted);
+  font-size: 0.75rem;
+  font-weight: var(--font-weight-medium);
+  line-height: 1.35;
+  letter-spacing: var(--letter-spacing-eyebrow);
+  text-transform: uppercase;
+}
+
+.title {
+  max-width: 58rem;
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.375rem, 5vw, 4rem);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.08;
+  overflow-wrap: anywhere;
+}
+
+.description {
+  max-width: 40rem;
+  margin: var(--space-5) 0 0;
+  color: var(--color-text-secondary);
+  font-size: 1.0625rem;
+  line-height: var(--line-height-body);
+}
+
+.media {
+  margin-top: var(--space-7);
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  aspect-ratio: 3 / 2;
+  background: var(--color-surface);
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (min-width: 64rem) {
+  .section {
+    padding-block: var(--space-10);
+  }
+
+  .eyebrow {
+    font-size: 0.8125rem;
+  }
+
+  .media {
+    margin-top: var(--space-8);
+  }
+}

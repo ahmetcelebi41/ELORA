@@ -4,7 +4,7 @@
 **Sayfa:** Hakkımızda  
 **Belge türü:** Nihai ve kilitli sayfa tasarım kararı  
 **Durum:** 🔒 KİLİTLİ  
-**Son güncelleme:** 08 Eylül 2026
+**Son güncelleme:** 12 Eylül 2026
 
 ---
 
@@ -56,11 +56,12 @@ Hakkımızda Sayfasının nihai section sırası:
 1. **Header**
 2. **Hakkımızda Hero / Intro**
 3. **Elora’nın Yaklaşımı**
-4. **Deneyim İlkeleri**
-5. **Mekân & Atmosfer**
-6. **Elora’da Bakım Anlayışı**
-7. **Final Randevu CTA**
-8. **Footer**
+4. **Elora’nın Yüzü / Marka Sahibi**
+5. **Deneyim İlkeleri**
+6. **Mekân & Atmosfer**
+7. **Elora’da Bakım Anlayışı**
+8. **Final Randevu CTA**
+9. **Footer**
 
 Bu sıra kullanıcı tarafından açıkça yeniden değerlendirilmedikçe korunacaktır.
 
@@ -165,6 +166,49 @@ Bu bölümde görsel ve CTA kullanılmayacaktır.
 ## Mobil
 
 Eyebrow → H2 → Paragraf 1 → Paragraf 2
+
+---
+
+# 6A. ELORA’NIN YÜZÜ / MARKA SAHİBİ — 🔒 KİLİTLİ / GÜNCELLENMİŞ KARAR
+
+Bu bölüm, kullanıcının 12 Eylül 2026 tarihli açık kararıyla sayfa mimarisine eklenmiştir. Tek marka sahibini editorial bir anlatımla görünür kılar; uzun biyografi, ekip kataloğu veya kurumsal CV işlevi taşımaz.
+
+## Eyebrow
+
+**ELORA’NIN YÜZÜ**
+
+## H2
+
+**Özenli bir deneyimin merkezinde, insana verilen değer var.**
+
+## Paragraf 1
+
+**Elora’da bakım deneyiminin her adımında sakinlik, açıklık ve kişiye özel yaklaşım ön plandadır. Markanın arkasındaki bu anlayış, sizi dinleyen ve ihtiyacınızı anlamaya odaklanan bir iletişimle başlar.**
+
+## Paragraf 2
+
+**Amacımız yalnızca bir uygulama sunmak değil; kendinize ayırdığınız zamanı rahat, güven veren ve özenli bir deneyime dönüştürmektir.**
+
+İsim veya unvan doğrulanmış proje verisi olmadan eklenmeyecektir.
+
+## Desktop
+
+**Sol yaklaşık %52:** büyük ana marka sahibi portresi
+
+**Sağ yaklaşık %48:** Eyebrow + H2 + iki paragraf + farklı destek portresi
+
+Kompozisyon klasik fotoğraf + biyografi kartı gibi değil, premium editorial bir bölüm olarak ele alınacaktır.
+
+## Mobil
+
+1. Ana marka sahibi portresi
+2. Eyebrow
+3. H2
+4. Paragraf 1
+5. Paragraf 2
+6. Farklı destek portresi
+
+CTA yoktur.
 
 ---
 
@@ -489,6 +533,10 @@ oluşturulmayacaktır.
 ↓  
 **Elora’nın Yaklaşımı — tipografi / metin odaklı sakin bölüm**  
 ↓  
+**Elora’nın Yüzü — marka sahibi portreleri + kişisel marka anlatısı**
+
+↓
+
 **Deneyim İlkeleri — üç kolonlu net prensipler**  
 ↓  
 **Mekân & Atmosfer — görsel ağırlıklı editorial alan**  
@@ -518,6 +566,9 @@ oluşturulmayacaktır.
 
 ### Hero
 Mekân / genel atmosfer.
+
+### Elora’nın Yüzü
+Aynı marka sahibine ait bir ana portre + en az bir farklı destek portresi.
 
 ### Mekân & Atmosfer
 Mimari detay + fiziksel ortam.
@@ -565,6 +616,7 @@ Mobil tasarım desktop’ın küçültülmüş hali olmayacaktır.
 
 - Hero → metin → görsel
 - Elora’nın Yaklaşımı → tek kolon metin
+- Elora’nın Yüzü → ana portre → metin → farklı destek portresi
 - Deneyim İlkeleri → dikey `01 → 02 → 03`
 - Mekân & Atmosfer → metin → ana görsel → destek görselleri
 - Bakım Anlayışı → görsel → metin → vurgu alanları → `Hizmetleri İncele →`
@@ -589,7 +641,7 @@ Varsayılan olarak kullanılmayacak:
 - sahte kuruluş hikâyesi,
 - sahte kuruluş yılı,
 - deneyim yılı,
-- ekip biyografileri,
+- ekip biyografileri (tek marka sahibine ayrılan kısa editorial bölüm bu yasağın dışındadır),
 - müşteri yorumları,
 - ödül / sertifika alanı,
 - sayaçlar,
@@ -629,11 +681,13 @@ Bu rol ayrımı korunacaktır.
 
 ## ONAYLANAN
 
-- 8 bölümlük Hakkımızda Sayfası yapısı.
+- 9 bölümlük Hakkımızda Sayfası yapısı.
 - Site-wide Header ve Footer yeniden kullanımı.
 - CTA’sız editorial Hero.
 - Hero’da geniş mekân / atmosfer görseli.
 - Elora’nın Yaklaşımı bölümünde görselsiz iki kolonlu metin düzeni.
+- Aynı marka sahibine ait ana ve farklı destek portreleriyle editorial Elora’nın Yüzü bölümü.
+- Marka sahibi bölümünde uzun biyografi, isim veya doğrulanmamış unvan kullanılmaması.
 - 3 kolonlu Deneyim İlkeleri sistemi.
 - Görsel ağırlıklı Mekân & Atmosfer bölümü.
 - İnsan + iletişim odaklı Bakım Anlayışı bölümü.

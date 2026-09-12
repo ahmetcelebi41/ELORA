@@ -1,0 +1,33 @@
+.section {
+  background: var(--color-surface);
+  padding-block: var(--space-8);
+}
+
+.layout {
+  display: grid;
+  gap: var(--space-6);
+}
+
+.body {
+  display: grid;
+  gap: var(--space-5);
+  max-width: 45rem;
+  color: var(--color-text-secondary);
+  font-size: 1rem;
+}
+
+.body p {
+  margin: 0;
+}
+
+@media (min-width: 64rem) {
+  .section {
+    padding-block: var(--space-10);
+  }
+
+  .layout {
+    grid-template-columns: minmax(0, 38fr) minmax(0, 62fr);
+    gap: var(--space-9);
+    align-items: start;
+  }
+}
