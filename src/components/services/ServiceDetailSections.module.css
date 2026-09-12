@@ -1,0 +1,285 @@
+.section,
+.surfaceSection,
+.hero,
+.appointment {
+  padding-block: var(--space-8);
+}
+
+.surfaceSection,
+.hero {
+  background: var(--color-surface);
+}
+
+.heroGrid,
+.overviewGrid,
+.relatedGrid {
+  display: grid;
+  gap: var(--space-7);
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.eyebrow {
+  color: var(--color-primary);
+  font-size: 0.75rem;
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--letter-spacing-eyebrow);
+  line-height: 1.4;
+  margin: 0 0 var(--space-4);
+  text-transform: uppercase;
+}
+
+.heroTitle {
+  font-family: var(--font-family-heading);
+  font-size: clamp(2.5rem, 8vw, 4.75rem);
+  font-weight: var(--font-weight-regular);
+  letter-spacing: -0.035em;
+  line-height: 1.02;
+  margin: 0;
+  max-width: 11ch;
+}
+
+.heroLead {
+  color: var(--color-text-secondary);
+  font-size: clamp(1rem, 2vw, 1.1875rem);
+  line-height: 1.7;
+  margin: var(--space-5) 0 0;
+  max-width: 35rem;
+}
+
+.heroAction {
+  margin-top: var(--space-6);
+}
+
+.heroMedia,
+.relatedMedia {
+  border-radius: var(--radius-xl);
+  min-height: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.heroMedia {
+  aspect-ratio: 4 / 3;
+}
+
+.relatedMedia {
+  aspect-ratio: 4 / 3;
+}
+
+.image {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.overviewCopy {
+  color: var(--color-text-secondary);
+  display: grid;
+  gap: var(--space-4);
+  line-height: 1.75;
+}
+
+.overviewCopy p {
+  margin: 0;
+}
+
+.processGrid,
+.goalsGrid,
+.infoGrid {
+  display: grid;
+  list-style: none;
+  margin: var(--space-7) 0 0;
+  padding: 0;
+}
+
+.processGrid {
+  gap: 0;
+}
+
+.processItem,
+.goalItem,
+.infoItem {
+  border-top: 1px solid var(--color-border);
+  padding-block: var(--space-5);
+}
+
+.stepNumber {
+  color: var(--color-primary);
+  display: block;
+  font-size: 0.8125rem;
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: 0.1em;
+  margin-bottom: var(--space-4);
+}
+
+.itemTitle,
+.columnTitle,
+.relatedTitle {
+  font-family: var(--font-family-heading);
+  font-weight: var(--font-weight-regular);
+  line-height: 1.2;
+  margin: 0;
+}
+
+.itemTitle {
+  font-size: 1.375rem;
+}
+
+.itemDescription,
+.relatedDescription {
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+  margin: var(--space-3) 0 0;
+}
+
+.goalsGrid {
+  gap: 0 var(--space-7);
+}
+
+.infoGrid {
+  gap: var(--space-7);
+}
+
+.infoColumn {
+  min-width: 0;
+}
+
+.columnTitle {
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
+}
+
+.infoList {
+  list-style: none;
+  margin: var(--space-5) 0 0;
+  padding: 0;
+}
+
+.relatedContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.relatedTitle {
+  font-size: clamp(1.75rem, 5vw, 2.75rem);
+}
+
+.relatedLink {
+  margin-top: var(--space-5);
+}
+
+.allServices {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: var(--space-6);
+}
+
+.appointment {
+  background: var(--color-surface-strong);
+}
+
+.appointmentContent {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.appointmentHeading {
+  max-width: 46rem;
+}
+
+.appointmentHeading > p:last-child {
+  margin-inline: auto;
+  max-width: 40rem;
+}
+
+.appointmentAction {
+  margin-top: var(--space-6);
+}
+
+@media (min-width: 48rem) {
+  .heroGrid {
+    align-items: center;
+    grid-template-columns: minmax(0, 9fr) minmax(0, 11fr);
+  }
+
+  .heroMedia {
+    aspect-ratio: 5 / 4;
+  }
+
+  .overviewGrid {
+    align-items: start;
+    grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+  }
+
+  .processGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .processItem {
+    border-left: 1px solid var(--color-border);
+    border-top: 0;
+    padding: 0 var(--space-5);
+  }
+
+  .processItem:first-child {
+    border-left: 0;
+    padding-left: 0;
+  }
+
+  .processItem:last-child {
+    padding-right: 0;
+  }
+
+  .goalsGrid,
+  .infoGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .relatedGrid {
+    align-items: center;
+    grid-template-columns: minmax(0, 11fr) minmax(0, 9fr);
+  }
+
+  .allServices {
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: 64rem) {
+  .section,
+  .surfaceSection,
+  .hero,
+  .appointment {
+    padding-block: var(--space-10);
+  }
+
+  .heroGrid,
+  .overviewGrid,
+  .relatedGrid {
+    gap: var(--space-9);
+  }
+
+  .processGrid,
+  .goalsGrid,
+  .infoGrid {
+    margin-top: var(--space-8);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .section *,
+  .surfaceSection *,
+  .hero *,
+  .appointment * {
+    scroll-behavior: auto;
+  }
+}
