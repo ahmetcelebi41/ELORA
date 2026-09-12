@@ -12,11 +12,11 @@ export function AboutOwner() {
         <div className={styles.layout}>
           <div className={styles.mainMedia}>
             <Image
-              alt="Elora’nın marka yüzü merkezde"
+              alt="Elora’nın marka yüzü merkezde elinde fincanıyla"
               className={styles.image}
               height={1402}
               sizes="(min-width: 1024px) 52vw, calc(100vw - 2 * var(--space-page-gutter))"
-              src="/images/about/about-owner-portrait.png"
+              src="/images/about/about-owner-secondary-01.png"
               width={1122}
             />
           </div>
@@ -42,11 +42,11 @@ export function AboutOwner() {
             </div>
             <div className={styles.secondaryMedia}>
               <Image
-                alt="Elora’nın marka yüzü merkezde farklı bir anda"
+                alt="Elora’nın marka yüzü reception alanında"
                 className={styles.image}
                 height={1402}
                 sizes="(min-width: 1024px) 360px, calc(100vw - 2 * var(--space-page-gutter))"
-                src="/images/about/about-owner-secondary-01.png"
+                src="/images/about/about-owner-secondary-02.png"
                 width={1122}
               />
             </div>
