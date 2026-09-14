@@ -4,13 +4,15 @@ import { ContactAppointmentCta } from "@/components/contact/ContactAppointmentCt
 import { ContactIntro } from "@/components/contact/ContactIntro";
 import { ContactMain } from "@/components/contact/ContactMain";
 import { LocationSection } from "@/components/contact/LocationSection";
+import { canonical } from "@/lib/seo";
 
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
-  title: "İletişim | Elora",
+  title: "İletişim",
   description:
     "Elora’nın hizmetleri ve randevu süreci hakkında bilgi alın, mesaj bırakın ve ziyaretinizi planlayın.",
+  alternates: canonical("/iletisim"),
 };
 
 export default function ContactPage() {

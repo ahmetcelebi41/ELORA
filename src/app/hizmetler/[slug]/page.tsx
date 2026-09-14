@@ -10,6 +10,7 @@ import { ServiceHero } from "@/components/services/ServiceHero/ServiceHero";
 import { ServiceOverview } from "@/components/services/ServiceOverview/ServiceOverview";
 import { ServiceProcess } from "@/components/services/ServiceProcess/ServiceProcess";
 import { getServiceBySlug, services } from "@/data/services";
+import { canonical } from "@/lib/seo";
 
 import styles from "./page.module.css";
 
@@ -30,8 +31,9 @@ export async function generateMetadata({ params }: ServicePageProps): Promise<Me
   if (!service) notFound();
 
   return {
-    title: `${service.name} | Elora`,
+    title: service.name,
     description: service.detail.heroLead,
+    alternates: canonical(`/hizmetler/${service.slug}`),
   };
 }
 

@@ -38,7 +38,7 @@
 
 .indicator {
   align-items: center;
-  color: var(--color-primary);
+  color: var(--color-primary-text);
   display: inline-flex;
   flex: 0 0 2rem;
   font-family: var(--font-family-body);
