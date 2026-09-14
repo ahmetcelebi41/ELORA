@@ -17,7 +17,7 @@ export function HomeAbout() {
               className={styles.image}
               height={1402}
               sizes="(min-width: 1280px) 568px, (min-width: 1024px) calc(50vw - 64px), calc(100vw - 2.5rem)"
-              src="/images/about/about-owner-portrait.png"
+              src="/images/about/about-owner-portrait.webp"
               width={1122}
             />
           </div>

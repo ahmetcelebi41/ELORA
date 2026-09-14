@@ -35,7 +35,7 @@ export function AboutCarePhilosophy() {
               className={styles.image}
               height={1402}
               sizes="(min-width: 1024px) 55vw, calc(100vw - 2 * var(--space-page-gutter))"
-              src="/images/about/about-care-philosophy.png"
+              src="/images/about/about-care-philosophy.webp"
               width={1122}
             />
           </div>

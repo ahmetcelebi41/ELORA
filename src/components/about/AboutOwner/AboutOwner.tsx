@@ -16,7 +16,7 @@ export function AboutOwner() {
               className={styles.image}
               height={1402}
               sizes="(min-width: 1024px) 52vw, calc(100vw - 2 * var(--space-page-gutter))"
-              src="/images/about/about-owner-secondary-01.png"
+              src="/images/about/about-owner-secondary-01.webp"
               width={1122}
             />
           </div>
@@ -46,7 +46,7 @@ export function AboutOwner() {
                 className={styles.image}
                 height={1402}
                 sizes="(min-width: 1024px) 360px, calc(100vw - 2 * var(--space-page-gutter))"
-                src="/images/about/about-owner-secondary-02.png"
+                src="/images/about/about-owner-secondary-02.webp"
                 width={1122}
               />
             </div>

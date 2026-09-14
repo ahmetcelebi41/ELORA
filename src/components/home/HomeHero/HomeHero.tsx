@@ -37,7 +37,7 @@ export function HomeHero() {
               height={1024}
               preload
               sizes="(min-width: 1280px) 672px, (min-width: 1024px) 55vw, calc(100vw - 2rem)"
-              src="/images/home/home-hero-lifestyle.png"
+              src="/images/home/home-hero-lifestyle.webp"
               width={1536}
             />
           </div>

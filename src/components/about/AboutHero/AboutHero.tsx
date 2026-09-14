@@ -27,7 +27,7 @@ export function AboutHero() {
             height={1024}
             priority
             sizes="(min-width: 1280px) 1200px, calc(100vw - 2 * var(--space-page-gutter))"
-            src="/images/about/about-hero-space.png"
+            src="/images/about/about-hero-space.webp"
             width={1536}
           />
         </div>

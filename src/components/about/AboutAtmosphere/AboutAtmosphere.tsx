@@ -25,7 +25,7 @@ export function AboutAtmosphere() {
               className={styles.image}
               height={1402}
               sizes="(min-width: 1024px) 60vw, calc(100vw - 2 * var(--space-page-gutter))"
-              src="/images/about/about-atmosphere-main.png"
+              src="/images/about/about-atmosphere-main.webp"
               width={1122}
             />
           </div>
@@ -36,7 +36,7 @@ export function AboutAtmosphere() {
               className={styles.image}
               height={1402}
               sizes="(min-width: 1024px) 38vw, calc(100vw - 2 * var(--space-page-gutter))"
-              src="/images/about/about-atmosphere-detail.png"
+              src="/images/about/about-atmosphere-detail.webp"
               width={1122}
             />
           </div>
