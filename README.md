@@ -6,6 +6,10 @@ ELORA, modern bir güzellik merkezi konseptini çok sayfalı bir web deneyimi ol
 
 **Canlı demo önizlemesi:** [elora-akd.pages.dev](https://elora-akd.pages.dev) — demo için `INDEX_SITE=false`; arama motorlarında indekslenmesi amaçlanmıyor.
 
+![ELORA ana sayfasının masaüstü hero görünümü](docs/portfolio/screenshots/desktop/elora-home-hero-desktop.webp)
+
+Masaüstü ve mobil ekran görüntüleriyle tasarım kararlarının anlatımı: [ELORA case study](docs/portfolio/ELORA_CASE_STUDY.md).
+
 ## Proje Hakkında
 
 Responsive sayfalar, ortak bileşenler ve veri kaynaklarıyla premium ama ölçülü bir görsel dil uygulanır. Next.js static export çıktısı Cloudflare Pages üzerinde yayımlanır. Bu çalışma gerçek bir hizmet, müşteri veya rezervasyon altyapısı sunmaz.
@@ -18,6 +22,21 @@ Responsive sayfalar, ortak bileşenler ve veri kaynaklarıyla premium ama ölç�
 - Alan doğrulaması ve başarı görünümü olan demo iletişim formu.
 - Hizmet, demo tarih/saat ve iletişim bilgilerini kapsayan üç adımlı demo randevu akışı; `?hizmet=<slug>` ile ön seçim.
 - Yerel WebP içerik görselleri, SVG demo konum görünümü ve static export.
+
+## Görsel Önizleme
+
+Editorial galeri ve üç adımlı demo randevu akışının tarih/saat seçimi:
+
+![ELORA editorial galeri masaüstü görünümü](docs/portfolio/screenshots/desktop/elora-gallery-desktop.webp)
+
+![ELORA demo randevu tarih ve saat seçimi masaüstü görünümü](docs/portfolio/screenshots/desktop/elora-appointment-step2-desktop.webp)
+
+Mobil ana sayfa ve açık navigasyon:
+
+<p align="center">
+  <img src="docs/portfolio/screenshots/mobile/elora-home-mobile.webp" width="260" alt="ELORA mobil ana sayfa görünümü">
+  <img src="docs/portfolio/screenshots/mobile/elora-mobile-nav.webp" width="260" alt="ELORA açık mobil navigasyon görünümü">
+</p>
 
 ## Sayfalar
 
@@ -109,7 +128,7 @@ docs/
 
 ## Canlı Demo
 
-[ELORA demo önizlemesini aç](https://elora-akd.pages.dev). Bu public demo `INDEX_SITE=false` ile yayındadır. Portföy ekran görüntüleri henüz eklenmedi; plan [SCREENSHOT_PLAN.md](docs/portfolio/SCREENSHOT_PLAN.md) dosyasındadır.
+[ELORA demo önizlemesini aç](https://elora-akd.pages.dev). Bu public demo `INDEX_SITE=false` ile yayındadır. [Masaüstü ve mobil ekran görüntüleri](docs/portfolio/SCREENSHOT_PLAN.md) portföy klasöründe listelenir; seçili görseller [case study](docs/portfolio/ELORA_CASE_STUDY.md) içinde yer alır.
 
 ## Proje Durumu
 
